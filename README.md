@@ -1,43 +1,43 @@
 # React Chat
 
-React Chat es una aplicación web de chat en tiempo real que te permite enviar y recibir mensajes instantáneamente. Está construida utilizando React, Firebase y Tailwind CSS.
+React Chat é um aplicativo web de bate-papo em tempo real que permite enviar e receber mensagens instantaneamente. Ele é construído usando React, Firebase e Tailwind CSS.
 
-![Captura de pantalla del proyecto](screenshot.png)
+![React Chat screenshot](../react-chat/public/react-app-video.gif)
 
 ## Características
 
-- Envía mensajes en tiempo real a otros usuarios conectados.
-- Interfaz de usuario intuitiva y receptiva.
-- Registro de usuarios y autenticación con Firebase.
-- Almacenamiento de mensajes en la base de datos en tiempo real de Firebase.
-- Estilos personalizados utilizando Tailwind CSS.
+- Envie mensagens em tempo real para outros usuários conectados.
+- Interface de usuário intuitiva e responsiva.
+- Cadastro e autenticação de usuários com Firebase.
+- Armazenamento de mensagens no banco de dados em tempo real do Firebase.
+- Estilos personalizados usando Tailwind CSS.
 
-## Requisitos Previos
+## Pré-requisitos
 
-- Node.js (v14 o superior)
-- Cuenta de Firebase para configurar el proyecto
+- Node.js (v14 ou superior)
+- Conta Firebase para configurar o projeto
 
-## Instalación
+## Instalação
 
-1. Clona este repositorio en tu máquina local:
+1. Clone este repositório para sua máquina local:
 
 ```bash
 git clone https://github.com/tu-usuario/react-chat.git
 ```
 
-2. Navega al directorio del proyecto:
+2. Navegue até o diretório do projeto:
 
 ```bash
 cd react-chat
 ```
 
-3. Instala las dependencias del proyecto:
+3. Instale as dependências do projeto:
 
 ```bash
 npm install
 ```
 
-## Configuración
+## Configuração
 
 1. Crea un nuevo proyecto en Firebase: [https://console.firebase.google.com/](https://console.firebase.google.com/)
 
@@ -47,55 +47,36 @@ npm install
 
 4. En la página de configuración de tu proyecto Firebase, busca la sección "SDK de Firebase" y copia las variables de configuración.
 
-5. Crea un archivo `.env.local` en la raíz del proyecto y pega las variables de configuración copiadas en el paso anterior. Asegúrate de agregar el prefijo `VITE_` a cada variable:
 
-```bash
-VITE_API_KEY=valor_de_api_key
-VITE_AUTH_DOMAIN=valor_de_auth_domain
-VITE_PROJECT_ID=valor_de_project_id
-VITE_STORAGE_BUCKET=valor_de_storage_bucket
-VITE_MESSSAGING_SENDER_ID=valor_de_messaging_sender_id
-VITE_APP_ID=valor_de_app_id
-```
+## Usar
 
-## Uso
-
-1. Inicia el servidor de desarrollo:
+1. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
 ```
 
-2. Abre tu navegador y ve a `http://localhost:3000` para ver la aplicación en funcionamiento.
+2. Abra seu navegador e vá para "http://localhost:5173" para ver o aplicativo em execução.
 
-## Estructura de Archivos
 
-La estructura de archivos del proyecto se organiza de la siguiente manera:
+## Contribuição
 
-```
-├── src/
-│   ├── components/
-│   ├── firebase/
-│   ├── hooks/
-│   ├── styles/
-│   ├── App.js
-│   └── index.js
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── .env.local
-├── .gitignore
-├── package.json
-└── README.md
-```
+Se você quiser contribuir com este projeto, seja bem-vindo! Você pode fazer melhorias, correções de bugs ou adicionar novos recursos. Para contribuir, siga estas etapas:
 
-- La carpeta `src/components/` contiene los componentes de React utilizados en la aplicación.
-- La carpeta `src/firebase/` contiene la configuración y funciones de Firebase.
-- La carpeta `src/hooks/` contiene los hooks personalizados utilizados en la aplicación.
-- La carpeta `src/styles/` contiene los estilos personalizados utilizando Tailwind CSS.
-- `App.js` es el componente principal que define la estructura y lógica de la aplicación.
-- `index.js` es el punto de entrada de la aplicación.
+- Faça um fork neste repositório.
+- Crie uma ramificação com o nome da sua função ou aprimoramento: git checkout -b my-improvement.
+- Faça as alterações necessárias e confirme: git commit -m "Add my improvement".
+- Envie suas alterações para o repositório remoto: git push origin my-enhancement.
+- Abra uma solicitação pull no GitHub.
 
-## Contribución
+## Créditos
 
-Si deseas contribuir a este proyecto, ¡eres bienvenido! Puedes realizar mejoras, correcciones de errores o agregar nuevas características. Para
+Este projeto foi criado por Humberto Colmenares.
+
+Agradecimentos especiais aos seguintes recursos e bibliotecas utilizados:
+
+Reagir
+Base de fogo
+Vento de cauda CSS
+Licença
+Este projeto está licenciado sob a licença MIT.
