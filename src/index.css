@@ -1,12 +1,20 @@
 @tailwind base;
+
+h1 {
+  @apply font-extrabold text-4xl
+}
+
+p {
+  @apply text-lg
+}
+
 @tailwind components;
 
 .chat-bubble {
-  @apply  p-4 bg-[#7cc5d9] text-[#1c2c4c] w-fit max-w-[calc(100%_-50%)]  flex items-start mb-5 shadow-2xl ;
+  @apply p-4 bg-white rounded-r-3xl rounded-b-3xl text-[#1c2c4c] w-fit shadow-[-2px_2px_1px_1px_orange] flex items-start mb-5;
 }
-
-.chat-bubble.right {
-  @apply ml-auto rounded-l-3xl rounded-t-3xl bg-white shadow-[-2px_2px_1px_1px_black] ;
+.chat-bubble__right {
+  @apply ml-auto  rounded-[25px_25px_0_25px] bg-white shadow-[-2px_2px_1px_1px_black];
 }
 
 @tailwind utilities;
