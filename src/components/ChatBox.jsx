@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   query,
   collection,
@@ -11,7 +11,8 @@ import Message from './Message';
 import SendMessage from './SendMessage';
 
 const ChatBox = () => {
-  const [messages, setMessages] = useState([])
+  const [messages, setMessages] = useState([]);
+  const scroll = useRef();
 
   useEffect(() => {
     const q = query(
@@ -28,18 +29,17 @@ const ChatBox = () => {
     });
     return () => unsubscribe;
   }, []);
+
   return (
-    <main>
-      <div>
-        {
-          messages?.map((message) => (
-            <Message key={messages.id} message={message} />
-          ))
-        }
+    <main className='bg-cyan-700 min-h-[100vh]'>
+      <div className='p-10 mb-16'>
+        {messages?.map((message) => (
+          <Message key={message.id} message={message} />
+        ))}
       </div>
-      <SendMessage />
+      <span ref={scroll}></span>
+      <SendMessage scroll={scroll} />
     </main>
   );
 };
-
 export default ChatBox;
