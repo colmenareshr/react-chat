@@ -1,14 +1,14 @@
+import { useState } from 'react';
 import { auth, db } from '../firebase';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
-import { useState } from 'react';
 
-const SendMessage = () => {
-  const [message, setMessage] = useState();
+const SendMessage = ({ scroll }) => {
+  const [message, setMessage] = useState('');
 
   const sendMessage = async (e) => {
     e.preventDefault();
-    if (message.trim === '') {
-      alert('hey! Envía un mensaje válido');
+    if (message.trim() === '') {
+      alert('Enter valid message');
       return;
     }
     const { uid, displayName, photoURL } = auth.currentUser;
@@ -16,26 +16,29 @@ const SendMessage = () => {
       text: message,
       name: displayName,
       avatar: photoURL,
-      cerateAt: serverTimestamp(),
+      createdAt: serverTimestamp(),
       uid,
     });
     setMessage('');
+    scroll.current.scrollIntoView({ behavior: 'smooth' });
   };
-
   return (
-    <form onSubmit={(e) => sendMessage(e)}>
+    <form onSubmit={(event) => sendMessage(event)} className='fixed bottom-0 w-full py-5 px-8 bg-slate-400 flex'>
       <label htmlFor='messageInput' hidden>
-        Enter message
+        Enter Message
       </label>
       <input
-        value={message}
-        type='text'
         id='messageInput'
         name='messageInput'
-        placeholder='Type message'
+        type='text'
+        className='h-10 p-3 w-full rounded-l-lg border-none flex-grow-1 bg-slate-50 text-blue-950 placeholder:text-slate-400 focus:outline-none shadow-2xl'
+        placeholder='type message...'
+        value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <button type='submit'>Send</button>
+      <button 
+      className='h-10 w-16 py-1 px-3 rounded-r-lg font-bold text-slate-950 bg-orange-400 shadow-2xl'
+      type='submit'>Send</button>
     </form>
   );
 };
