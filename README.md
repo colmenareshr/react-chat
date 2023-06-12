@@ -2,7 +2,7 @@
 
 React Chat é um aplicativo web de bate-papo em tempo real que permite enviar e receber mensagens instantaneamente. Ele é construído usando React, Firebase e Tailwind CSS.
 
-![React Chat screenshot](../react-chat/public/react-app-video.gif)
+![React Chat screenshot](react-app-video.gif)
 
 ## Características
 
