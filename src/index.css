@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
+
+.chat-bubble {
+  @apply  p-4 bg-[#7cc5d9] text-[#1c2c4c] w-fit max-w-[calc(100%_-50%)]  flex items-start mb-5 shadow-2xl ;
+}
+
+.chat-bubble.right {
+  @apply ml-auto rounded-l-3xl rounded-t-3xl bg-white shadow-[-2px_2px_1px_1px_black] ;
+}
+
 @tailwind utilities;
