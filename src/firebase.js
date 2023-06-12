@@ -13,12 +13,12 @@ import { getFirestore } from 'firebase/firestore';
 
 
   const firebaseConfig = {
-    apiKey: import.meta.env.PROD.VITE_API_KEY,
-    authDomain: import.meta.env.PROD.VITE_AUTH_DOMAIN,
-    projectId: import.meta.env.PROD.VITE_PROJECT_ID,
-    storageBucket: import.meta.env.PROD.VITE_STORAGE_BUCKET,
-    messagingSenderId: import.meta.env.PROD.VITE_MESSSAGING_SENDER_ID,
-    appId: import.meta.env.PROD.VITE_APP_ID,
+    apiKey: import.meta.env.PRODUCTION.VITE_API_KEY,
+    authDomain: import.meta.env.PRODUCTION.VITE_AUTH_DOMAIN,
+    projectId: import.meta.env.PRODUCTION.VITE_PROJECT_ID,
+    storageBucket: import.meta.env.PRODUCTION.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.PRODUCTION.VITE_MESSSAGING_SENDER_ID,
+    appId: import.meta.env.PRODUCTION.VITE_APP_ID,
   };
 
 
