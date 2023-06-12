@@ -8,8 +8,8 @@ const Welcome = () => {
     signInWithRedirect(auth, provider)
   };
   return (
-    <main className='bg-slate-300 w-full h-[100vh] md:h-[50vh] flex flex-col items-center justify-center gap-2 text-center py-16'>
-      <h2 className='text-2xl font-bold'>Bienvenido a tu App React Chat</h2>
+    <main className='bg-slate-300 w-full h-[100vh] flex flex-col items-center justify-center gap-2 text-center py-16'>
+      <h1>Bienvenido a tu App React Chat</h1>
       <p>
         Entra con tu cuenta de Goolge para chatear con otros desarrolladores
       </p>
