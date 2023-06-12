@@ -1,7 +1,6 @@
 import { auth } from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth';
-import { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 const Navbar = () => {
 const [user] = useAuthState(auth);
