@@ -75,8 +75,8 @@ Este projeto foi criado por Humberto Colmenares.
 
 Agradecimentos especiais aos seguintes recursos e bibliotecas utilizados:
 
-Reagir
-Base de fogo
-Vento de cauda CSS
-Licença
-Este projeto está licenciado sob a licença MIT.
+[freeCodeCamp.org](https://www.freecodecamp.org/)
+
+- React
+- Firebase
+ -Tailwind CSS
