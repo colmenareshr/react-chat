@@ -13,7 +13,6 @@ function App() {
       {
         !user ? <Welcome /> : <ChatBox />
       }
-      <h1>Hola Mundo</h1>
     </>
   );
 }
